@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tableau de bord | Primonial</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="assets/logo.jpg">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown">
+          <a class="navbar-link">Mon menu</a>
+
+          <div class="navbar-dropdown">
+            <a href="#" class="navbar-item">Item #1</a>
+            <a href="#" class="navbar-item">Item #2</a>
+            <a href="#" class="navbar-item">Item #3</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <img src="assets/notif-icon.png" alt="Notifications icon">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="dashboard">
+    <div class="columns">
+      <aside class="column is-2 side-menu">
+        <div class="side-menu--nav">
+          <div class="side-menu--nav-item">
+            <div class="side-menu--nav-item--icon">
+              <i class="fas fa-border-all"></i>
+            </div>
+            <div class="side-menu--nav-item--text">
+              <h3>Mon patrimoine</h3>
+              <p>1 949 023,47€</p>
+            </div>
+          </div>
+          <div class="side-menu--nav-item is-active">
+            <div class="side-menu--nav-item--icon">
+              <i class="fas fa-border-all"></i>
+            </div>
+            <div class="side-menu--nav-item--text">
+              <h3>Mes projets</h3>
+              <p>En cours: 3</p>
+            </div>
+          </div>
+          <div class="side-menu--nav-item">
+            <div class="side-menu--nav-item--icon">
+              <i class="fas fa-border-all"></i>
+            </div>
+            <div class="side-menu--nav-item--text">
+              <h3>Le blog</h3>
+              <p>Nouveaux articles: 8</p>
+            </div>
+          </div>
+        </div>
+        <button class="button is-white semi-bordered has-text-primary">Connecter mon patrimoine</button>
+        <div class="side-menu--projects-wrapper">
+          <div class="tabs">
+            <ul>
+              <li><a href="#">Catégories</a></li>
+              <li class="is-active"><a href="#">Etablissements</a></li>
+            </ul>
+          </div>
+          <div class="accordions side-menu--projects">
+            <article class="accordion is-active side-menu--projects-project">
+              <div class="accordion-header">
+                <h4>Primonial</h4>
+                <i class="fas fa-caret-down toggle"></i>
+              </div>
+
+              <div class="accordion-body side-menu--projects-project-items">
+                Ò
+              </div>
+            </article>
+          </div>
+        </div>
+      </aside>
+      <div class="column dashboard-content"></div>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+
+</html>

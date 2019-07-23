@@ -12,6 +12,7 @@
     "sass": "^1.22.7"
   },
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "bulma-extensions": "^6.2.7"
   }
 }

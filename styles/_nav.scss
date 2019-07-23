@@ -1,0 +1,13 @@
+.navbar {
+  box-shadow: 2px 2px 2px lighten($dark, 70%);
+
+  &-link {
+    font-weight: bold;
+    color: $primary;
+    font-size: 0.8rem;
+
+    &:not(.is-arrowless)::after {
+      border-color: $primary;
+    }
+  }
+}
